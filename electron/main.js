@@ -23,8 +23,6 @@ function createWindow() {
     // Load the app
     if (process.env.VITE_DEV_SERVER_URL) {
         mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL);
-        // Open the DevTools in development mode.
-        mainWindow.webContents.openDevTools();
     } else {
         // In production, load from the dist directory
         const indexPath = path.join(__dirname, '..', 'dist', 'index.html');
